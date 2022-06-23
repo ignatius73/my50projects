@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height:100vh;
+    
+}
+
+body{
+    background-color: rgb(160, 250, 54);
+    display:flex;
+    font-family: 'Fjalla One', sans-serif;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container{
+    display:flex;
+    gap:20px;
+
+}
+
+.cards{
+    display:flex;
+    padding:30px;
+    border: 3px solid rebeccapurple;
+    border-radius: 1.5rem;
+    min-height: 30rem;
+    flex: 0.5;
+    transition: flex 1s ease-in;
+    background-size:cover;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: end;
+    transition: flex 1s;
+
+    
+    
+}
+
+.cards.active{
+    flex:5;
+    width: 30rem;
+    cursor: initial;
+    
+    
+}
+
+.cards h2 {
+    color:#fff;
+    opacity:0;
+    transition: opacity 0.5s;
+
+}
+
+.cards.active h2{
+    color:#fff;
+    opacity: 1;
+    transition: opacity 1s;
+    text-shadow: 1px 1px #000;
+}
+
+
+
+
+
+.cards:not(.active){
+    cursor:pointer;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+
+

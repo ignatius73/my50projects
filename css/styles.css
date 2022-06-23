@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height:100vh;   
+}
+
+body{
+    /*display:flex;*/
+    font-family: 'Fjalla One', sans-serif;
+   /* justify-content: center;
+    align-items: flex-start;*/
+    background-color: rgb(29, 28, 28);
+    overflow-x: hidden;
+    margin:0
+   
+}
+
+.show-nav{
+    width:200px;
+    height:200px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    position:fixed;
+    top: -100px;
+    left:-100px;
+
+}
+
+.show-nav button {
+    position:absolute;
+    margin-left:120px;
+    margin-top:140px;
+    background: transparent;
+    border:none;
+    cursor:pointer;
+    z-index:100;
+
+
+}
+
+.content{
+    padding-top: 100px;
+    overflow-x: hidden;    
+    margin: 0 auto;
+    max-width:1070px;
+    background-color: azure;
+}
+
+.content img{
+    width:100%;
+}
+
+.giroContent{
+    transform:rotate(-12.5deg);
+    transform-origin: top left;
+    transition: transform 0.8s;
+}
+.rotateContent{
+    transform:rotate(0deg);
+    transform-origin: top left;
+    transition: transform 0.8s;
+}
+
+.show-nav button#close{
+    margin-left:50px;
+    margin-top:36px
+}
+
+.changeButton{
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease; 
+}
+.rotateButton{
+    transform: rotate(0deg);
+    transition: transform 0.5s ease; 
+}
+.show-nav button i {
+    font-size: 26px;
+    color:#fff;
+}
+
+nav{
+    position:fixed;
+    bottom:10px;
+    left:-180px;
+}
+
+.muestra-nav{
+    transform:translate( 150px );
+    transition: transform 0.5s;
+
+}
+.oculta-nav{
+    transform:translate( -150px );
+    transition: transform 0.5s;
+}
+
+nav ul li {
+    color:white;
+    list-style-type: none;
+    margin: 40px 0;   
+}
+
+nav ul li + li {
+    margin-left:15px;
+}
+nav ul li + li + li{
+    margin-left:30px;
+}
+
+nav ul li i{
+    font-size:20px;
+    margin-right:20px;
+}
+
+
